@@ -1,0 +1,25 @@
+<div class="redeem-container row">
+    <div class="col-sm-10 col-md-6 form-container p-4">
+        <div class="d-flex">
+            <span class="arrow"><img src="../../../assets/2849832_arrows_navigation_arrow_left_back_icon.svg" alt=""></span>
+            <h1 class="mt-5">Datos del Canje</h1>
+        </div>
+        <form>
+            <label class="mt-5 mb-3">¿A qué tarjeta asociamos el ahorro?</label>
+            <select class="form-select form-select-md" >
+                <option selected>Elegir Tarjeta</option>
+                <option *ngFor="let card of cardOptions" value="1">{{card}}</option>
+            </select>
+            <label class="mt-5 mb-3">¿A cual mail enviamos el comprobante?</label>
+            <div>
+                <label class="form-label mt-2">Email</label>
+                <input type="email" class="form-control mb-5">
+            </div>
+            <button type="button" class="btn redeem-btn float-end mt-5">Canjear</button>
+            <div class="d-flex flex-column">
+                <button class="btn continue-btn" type="button">Continuar</button>
+              </div>
+        </form> 
+ 
+    </div>
+</div>
